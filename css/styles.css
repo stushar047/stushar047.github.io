@@ -11308,3 +11308,82 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+
+/* =========================================================
+   PROFESSIONAL ACADEMIC OVERRIDES
+   ========================================================= */
+
+/* Global typography */
+body {
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    color: #212529;
+    line-height: 1.65;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    color: #374151;
+}
+
+/* Links */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* About section image */
+#about img {
+    max-width: 220px;
+    border-radius: 8px;
+}
+
+/* Publications list */
+.pub-list {
+    padding-left: 1.2rem;
+}
+.pub-list li {
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+    font-size: 0.95rem;
+}
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Header / hero text */
+header h1 {
+    font-weight: 700;
+}
+header p {
+    font-size: 1.05rem;
+}
+
+/* Subtle section spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Footer (if any) */
+footer {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
