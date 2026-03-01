@@ -14,14 +14,24 @@
   <style>
     html { overflow-y: scroll; }  /* prevents navbar shifting */
 
-    body {
-      line-height: 1.6;
-    }
+    body { line-height: 1.6; }
 
     .section-title {
       border-bottom: 2px solid #dee2e6;
       padding-bottom: 0.4rem;
       margin-bottom: 1.5rem;
+    }
+
+    .teach-card .inst-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .5rem 1rem;
+      align-items: baseline;
+    }
+
+    .course-line {
+      margin-top: .5rem;
     }
   </style>
 </head>
@@ -56,27 +66,75 @@
 <section class="py-5 bg-light">
   <div class="container">
 
-    <h2 class="section-title">Teaching Experience</h2>
+    <h2 class="section-title">To teach is to learn twice over - Joseph Joubert</h2>
 
-    <div class="mb-4">
-      <h5>University of Tennessee, Knoxville</h5>
-      <div class="text-muted">Graduate Teaching Assistant</div>
-      <ul>
-        <li>ECE 356 — Computer Systems Architecture</li>
-        <li>ECE 433 — VLSI Design</li>
-        <li>ECE 453/553 — Computer Networks</li>
-      </ul>
+    <!-- UTK -->
+    <div class="card teach-card shadow-sm mb-3">
+      <div class="card-body">
+        <div class="inst-line">
+          <h5 class="mb-0">University of Tennessee, Knoxville</h5>
+          <span class="text-muted">Spring 2022 – Spring 2023</span>
+        </div>
+        <div class="text-muted fst-italic mt-1">Graduate Teaching Assistant</div>
+
+        <ul class="mt-3 mb-0">
+          <li>Assisted students with MIPS assembly programming, cache simulation, and related topics.</li>
+          <li>Supported CMOS circuit design and simulation in Cadence.</li>
+          <li>Guided socket programming and protocol analysis (TCP/UDP) using Wireshark.</li>
+          <li>Led labs and office hours; graded homework and exams.</li>
+        </ul>
+
+        <div class="course-line">
+          <strong>Courses:</strong>
+          ECE 356 Computer Systems Architecture; ECE 433 VLSI Design; ECE 453/553 Computer Networks.
+        </div>
+      </div>
     </div>
 
-    <div>
-      <h5>Texas State University</h5>
-      <div class="text-muted">Graduate Instructional Assistant</div>
-      <ul>
-        <li>Microprocessors</li>
-        <li>Digital Signal Processing</li>
-        <li>Machine Learning for Engineering Applications</li>
-        <li>Senior Design I & II</li>
-      </ul>
+    <!-- Texas State -->
+    <div class="card teach-card shadow-sm mb-3">
+      <div class="card-body">
+        <div class="inst-line">
+          <h5 class="mb-0">Texas State University, San Marcos</h5>
+          <span class="text-muted">Fall 2020 – Fall 2021</span>
+        </div>
+        <div class="text-muted fst-italic mt-1">Graduate Instructional Assistant</div>
+
+        <ul class="mt-3 mb-0">
+          <li>Supported coursework in assembly language programming, timing analysis, Python programming, machine learning frameworks, and MATLAB-based Fourier/signal processing.</li>
+          <li>Assisted students with network protocol analysis using Wireshark and mentored senior design teams.</li>
+          <li>Guided the development of embedded systems projects utilizing Raspberry Pi, Arduino, and various sensors and actuators.</li>
+          <li>Evaluated assignments, laboratory work, and examinations.</li>
+        </ul>
+
+        <div class="course-line">
+          <strong>Courses:</strong>
+          EE 3420 Microprocessors; EE 4372 Communication Networks; EE 5331 Machine Learning for Engineering Applications;
+          EE 4377 Digital Signal Processing; EE 4090 Electrical Engineering Design I; EE 4091 Electrical Engineering Design II.
+        </div>
+      </div>
+    </div>
+
+    <!-- UAF -->
+    <div class="card teach-card shadow-sm">
+      <div class="card-body">
+        <div class="inst-line">
+          <h5 class="mb-0">University of Alaska, Fairbanks</h5>
+          <span class="text-muted">Fall 2019 – Spring 2020</span>
+        </div>
+        <div class="text-muted fst-italic mt-1">Graduate Teaching Assistant</div>
+
+        <ul class="mt-3 mb-0">
+          <li>Conducted communications and circuits/signal-processing labs using oscilloscopes, function generators, and spectrum analyzers.</li>
+          <li>Provided MATLAB support; supervised circuit labs; graded coursework.</li>
+        </ul>
+
+        <div class="course-line">
+          <strong>Courses:</strong>
+          EE F461 Communication Systems; EE 334 Electronic Circuit Design; EE F353 Circuit Theory;
+          EE F307 Elements of Electrical Engineering; EE 354 Engineering Signal Analysis.
+        </div>
+      </div>
     </div>
 
   </div>
