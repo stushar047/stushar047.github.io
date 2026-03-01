@@ -9927,14 +9927,13 @@ textarea.form-control-lg {
   }
 }
 
-.quote-banner {
-  background: linear-gradient(135deg, #212529, #343a40);
-  color: #ffffff;
-  padding: 1.2rem 1rem;
+.quote-green {
+  background-color: #e9f7ef;     /* very light green */
+  color: #1e5631;                /* deep green text */
+  padding: 1.2rem;
   border-radius: 12px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  border: 1px solid #c3e6cb;
+  font-weight: 1000;
 }
 @media (min-width: 1200px) {
   .float-xl-start {
