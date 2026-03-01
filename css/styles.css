@@ -11289,6 +11289,7 @@ textarea.form-control-lg {
 body,
 html {
   height: 100%;
+  overflow-y: scroll;  /* keep scrollbar always, prevents shifting */
 }
 
 .feature {
