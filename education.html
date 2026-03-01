@@ -10,7 +10,7 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
+  <!-- Bootstrap Icons (optional; safe to keep) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
@@ -20,6 +20,20 @@
       width: 72px;
       height: 72px;
       object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .edu-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 1rem;
+      align-items: baseline;
+    }
+    .edu-meta .badge {
+      font-weight: 500;
+    }
+    .edu-bullets {
+      margin-bottom: 0;
+      padding-left: 1.1rem;
     }
   </style>
 </head>
@@ -36,7 +50,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link active" href="education.html">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
         <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
@@ -49,18 +63,30 @@
 <main class="flex-shrink-0" style="margin-top: 72px;">
   <section class="py-5">
     <div class="container">
-      <!-- <h2 class="section-title">Education</h2> -->
+      <h2 class="section-title">Education</h2>
 
       <!-- UTK -->
       <div class="card edu-card shadow-sm mb-3">
         <div class="card-body">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/utk.png" alt="University of Tennessee, Knoxville logo">
-            <div>
-              <h5 class="mb-1">University of Tennessee, Knoxville</h5>
-              <div class="text-muted mb-2">PhD in Computer Engineering (2022 – 2026, anticipated)</div>
-              <div>GPA: 3.89 / 4.00</div>
-              <div>Advisors: Garrett S. Rose, Ahmedullah Aziz, Catherine Schuman</div>
+            <div class="w-100">
+
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                <h5 class="mb-0">University of Tennessee, Knoxville, TN, USA</h5>
+                <span class="text-muted">Spring 2022 – Summer 2026</span>
+              </div>
+
+              <div class="edu-meta mt-1 mb-2">
+                <span>PhD in Computer Engineering</span>
+                <span class="badge text-bg-light">GPA: 3.89 / 4.00</span>
+              </div>
+
+              <ul class="edu-bullets">
+                <li>Advisors: Dr. Garrett S. Rose, Dr. Ahmedullah Aziz, Dr. Catherine Schuman</li>
+                <li>Dissertation Topic: Mixed-Signal Memristive Systems for Resource-Constrained Computer Vision.</li>
+              </ul>
+
             </div>
           </div>
         </div>
@@ -71,10 +97,28 @@
         <div class="card-body">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/txst.jpg" alt="Texas State University logo">
-            <div>
-              <h5 class="mb-1">Texas State University</h5>
-              <div class="text-muted mb-2">MS in Electrical Engineering (2020 – 2022)</div>
-              <div>GPA: 3.88 / 4.00</div>
+            <div class="w-100">
+
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                <h5 class="mb-0">Texas State University, San Marcos, TX, USA</h5>
+                <span class="text-muted">Fall 2020 – Spring 2022</span>
+              </div>
+
+              <div class="edu-meta mt-1 mb-2">
+                <span>MS in Engineering (Electrical Engineering)</span>
+                <span class="badge text-bg-light">GPA: 3.88 / 4.00</span>
+              </div>
+
+              <ul class="edu-bullets">
+                <li>Advisors: Dr. William A. Stapleton, Dr. Damian Valles Molina, Dr. Vangelis Metsis</li>
+                <li>
+                  <a href="https://digital.library.txst.edu/items/28c90d7f-cc88-4358-a654-9b46173ffac6" target="_blank" rel="noopener">
+                    Dissertation Topic
+                  </a>:
+                  Exploring the Feasibility of Social Distancing Measurement from Autonomous Vehicle.
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
@@ -85,9 +129,28 @@
         <div class="card-body">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/uaf.png" alt="University of Alaska Fairbanks logo">
-            <div>
-              <h5 class="mb-1">University of Alaska, Fairbanks</h5>
-              <div class="text-muted mb-2">MS in Electrical Engineering (2019 – 2020, not completed)</div>
+            <div class="w-100">
+
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                <h5 class="mb-0">University of Alaska, Fairbanks, AK, USA</h5>
+                <span class="text-muted">Fall 2019 – Spring 2020 (not completed)</span>
+              </div>
+
+              <div class="edu-meta mt-1 mb-2">
+                <span>MS in Electrical Engineering</span>
+                <span class="badge text-bg-light">GPA: 3.65 / 4.00</span>
+              </div>
+
+              <ul class="edu-bullets">
+                <li>Advisors: Dr. Katrina Bossert, Dr. Richard Collins</li>
+                <li>
+                  <a href="https://github.com/stushar047/Gravity-Wave-Parameterization-from-AIRS-satellie-image.git" target="_blank" rel="noopener">
+                    MS Research
+                  </a>:
+                  FFT-based determination of gravity waves’ horizontal wavelength by manually detecting the region where there is a strong presence of gravity waves in the geospatial image from the AIRS instrument on the Aqua satellite.
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
@@ -98,9 +161,29 @@
         <div class="card-body">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/cuet.svg" alt="Chittagong University of Engineering and Technology logo">
-            <div>
-              <h5 class="mb-1">Chittagong University of Engineering and Technology</h5>
-              <div class="text-muted mb-2">BS in Electrical & Electronic Engineering (2013 – 2017)</div>
+            <div class="w-100">
+
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                <h5 class="mb-0">Chittagong University of Engineering and Technology</h5>
+                <span class="text-muted">March 2013 – November 2017</span>
+              </div>
+
+              <div class="edu-meta mt-1 mb-2">
+                <span>BS in Electrical &amp; Electronic Engineering</span>
+                <span class="badge text-bg-light">GPA: 3.49 / 4.00</span>
+              </div>
+
+              <ul class="edu-bullets">
+                <li>Advisors: Dr. Mohammad Istiaque Reja, Dr. Jobaida Akhtar</li>
+                <li>
+                  <a href="https://www.researchgate.net/profile/Mohammad-Istiaque-Reja/publication/325155335_Modeling_and_Analysis_of_Z_Folded_Solid_State_Laser_Cavity_with_Two_Curved_Mirrors/links/5afb0ca4458515c00b6cc657/Modeling-and-Analysis-of-Z-Folded-Solid-State-Laser-Cavity-with-Two-Curved-Mirrors.pdf"
+                     target="_blank" rel="noopener">
+                    Dissertation Topic
+                  </a>:
+                  Modeling and Analysis of Z Folded Solid State Laser Cavity with Two Curved Mirrors
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
