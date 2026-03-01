@@ -9926,6 +9926,16 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
+
+.quote-banner {
+  background: linear-gradient(135deg, #212529, #343a40);
+  color: #ffffff;
+  padding: 1.2rem 1rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
 @media (min-width: 1200px) {
   .float-xl-start {
     float: left !important;
