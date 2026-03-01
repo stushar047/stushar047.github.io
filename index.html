@@ -13,23 +13,33 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-
     <style>
         body {
             line-height: 1.6;
         }
+
         section {
             scroll-margin-top: 80px;
         }
+
         .section-title {
             border-bottom: 2px solid #dee2e6;
             padding-bottom: 0.4rem;
             margin-bottom: 1.5rem;
         }
-        .pub-list li {
-            margin-bottom: 0.8rem;
+
+        .headshot {
+            max-height: 320px;
+            object-fit: cover;
+        }
+
+        .social-icons img {
+            height: 28px;
+            transition: 0.2s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -59,40 +69,61 @@
 
 <main class="flex-shrink-0" style="margin-top: 72px;">
 
-    
 <!-- ================= ABOUT ================= -->
 <section id="about" class="py-5">
     <div class="container">
         <h2 class="section-title">About</h2>
 
-        <div class="row align-items-center">
-            <!-- Text -->
-            <div class="col-lg-8">
-               <p>
-                    I am Sree Nirmillo Biswash Tushar, currently a Ph.D. candidate in Computer Engineering at the University of Tennessee, Knoxville (UTK). I earned my M.S. in Electrical Engineering (2022) from Texas State University and my B.S. in Electrical and Electronic Engineering from Chittagong University of Engineering and Technology (CUET) in 2017.
-                    </p>
-                    
-                    <p>
-                        My research focuses on neuromorphic computing architectures, spiking neural networks, and memristive in-memory computing systems for energy-efficient artificial intelligence. I work at the intersection of device-level modeling, mixed-signal circuit design, and hardware-aware learning algorithms to develop biologically inspired computing platforms for edge intelligence, computer vision, and continual learning. My work includes memristive dot-product engines, in-memory template matching systems, refractory-period optimization for SNNs, and silicon-validated neuromorphic architectures implemented in 65 nm CMOS technology.
-                    </p>
-                    
-                    <p>
-                        My research bridges algorithm–hardware co-design with practical circuit implementation, aiming to advance scalable, low-power AI systems beyond conventional von Neumann architectures.
-                        <a href="https://scholar.google.com/citations?user=YEb9JfcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-                        <a href="https://github.com/stushar047" target="_blank">GitHub</a> |
-                        <a href="https://www.linkedin.com/in/sree-nirmillo-biswash" target="_blank">LinkedIn</a>
-                    </p>
-                    <a href="https://scholar.google.com/citations?user=YEb9JfcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-                    <a href="https://github.com/stushar047" target="_blank">GitHub</a> |
-                    <a href="https://www.linkedin.com/in/sree-nirmillo-biswash" target="_blank">LinkedIn</a>
-                </p>
-            </div>
+        <div class="row align-items-start g-4">
 
-            <!-- Image -->
+            <!-- LEFT: HEADSHOT + CV -->
             <div class="col-lg-4 text-center">
                 <img src="assets/front_img.jfif"
-                     class="img-fluid rounded-3 shadow"
+                     class="img-fluid rounded-3 shadow headshot mb-3"
                      alt="Sree Nirmillo Biswash Tushar">
+
+                <!-- CV Button -->
+                <div>
+                    <a href="assets/cv.pdf"
+                       target="_blank"
+                       class="btn btn-dark btn-sm">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT: TEXT -->
+            <div class="col-lg-8">
+
+                <p>
+                    I am Sree Nirmillo Biswash Tushar, currently a Ph.D. candidate in Computer Engineering at the University of Tennessee, Knoxville (UTK). I earned my M.S. in Electrical Engineering (2022) from Texas State University and my B.S. in Electrical and Electronic Engineering from Chittagong University of Engineering and Technology (CUET) in 2017.
+                </p>
+
+                <p>
+                    My research focuses on neuromorphic computing architectures, spiking neural networks, and memristive in-memory computing systems for energy-efficient artificial intelligence. I work at the intersection of device-level modeling, mixed-signal circuit design, and hardware-aware learning algorithms to develop biologically inspired computing platforms for edge intelligence, computer vision, and continual learning. My work includes memristive dot-product engines, in-memory template matching systems, refractory-period optimization for SNNs, and silicon-validated neuromorphic architectures implemented in 65 nm CMOS technology.
+                </p>
+
+                <p>
+                    My research bridges algorithm–hardware co-design with practical circuit implementation, aiming to advance scalable, low-power AI systems beyond conventional von Neumann architectures.
+                </p>
+
+                <!-- SOCIAL ICONS (IMAGE FILES) -->
+                <div class="social-icons d-flex gap-4 mt-3">
+
+                    <a href="https://scholar.google.com/citations?user=YEb9JfcAAAAJ&hl=en" target="_blank">
+                        <img src="assets/google-scholar.png" alt="Google Scholar">
+                    </a>
+
+                    <a href="https://github.com/stushar047" target="_blank">
+                        <img src="assets/github.png" alt="GitHub">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sree-nirmillo-biswash" target="_blank">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
+                    </a>
+
+                </div>
+
             </div>
         </div>
     </div>
