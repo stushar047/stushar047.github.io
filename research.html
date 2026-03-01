@@ -5,21 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | SNB Tushar</title>
 
-  <meta name="description" content="Academic homepage of Sree Nirmillo Biswash Tushar, PhD researcher in neuromorphic computing.">
+  <meta name="description" content="Research projects of Sree Nirmillo Biswash Tushar in neuromorphic computing and resource-constrained vision.">
   <meta name="author" content="Sree Nirmillo Biswash Tushar">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    html { overflow-y: scroll; }  /* ✅ prevents navbar shifting between pages */
-
+    html { overflow-y: scroll; } /* prevents navbar shifting */
     body { line-height: 1.6; }
 
     .section-title {
       border-bottom: 2px solid #dee2e6;
       padding-bottom: 0.4rem;
       margin-bottom: 1.5rem;
+    }
+
+    .project-card {
+      border: 0;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .project-thumb {
+      width: 100%;
+      height: 210px;          /* consistent image box size */
+      object-fit: cover;      /* crops nicely */
+      background: #f1f3f5;    /* placeholder background if image missing */
+    }
+
+    .project-meta {
+      color: #6c757d;
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: .25rem .55rem;
+      border-radius: 999px;
+      font-size: .82rem;
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      margin-right: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .figure-note {
+      font-size: .9rem;
+      color: #6c757d;
     }
   </style>
 </head>
@@ -50,43 +83,115 @@
 
 <!-- ================= CONTENT ================= -->
 <main class="flex-shrink-0" style="margin-top: 72px;">
+
   <section class="py-5 bg-light">
     <div class="container">
 
-      <h2 class="section-title">Research Interests</h2>
+      <h2 class="section-title">Research Projects</h2>
 
-      <ul>
-        <li>Neuromorphic computing with memristive hardware</li>
-        <li>Spiking neural networks and in-memory dot-product engines</li>
-        <li>Hardware-aware learning and energy-efficient AI accelerators</li>
-        <li>Reservoir computing and sleep-inspired continual learning</li>
-        <li>Computer vision and edge AI systems</li>
-      </ul>
+      <div class="row g-4">
 
-      <h4 class="mt-4">Graduate Research Assistant — SENECA Design Lab</h4>
-      <p class="fst-italic">University of Tennessee, Knoxville (2022 – Present)</p>
+        <!-- Project 1 -->
+        <div class="col-lg-4">
+          <div class="card project-card shadow-sm h-100">
+            <!-- Figure placeholder (replace src with your image) -->
+            <img class="project-thumb"
+                 src="assets/project_rc_vision.jpg"
+                 alt="Resource Constrained Computer Vision figure (replace this image)">
 
-      <ul>
-        <li>
-          Contributed to neuromorphic chip tape-out using HfO₂-based memristive devices
-          fabricated in IBM 65 nm technology, including WTA circuits and dot-product engines.
-        </li>
-        <li>
-          Developed in-memory template matching and motion recognition systems achieving
-          up to <strong>678× improvement in power–delay product</strong>.
-        </li>
-        <li>
-          Created <strong>NeuroPAT</strong>, a neuromorphic energy estimation framework
-          integrated with the RAVENS platform.
-        </li>
-        <li>
-          Investigated STDP, reservoir computing, and sleep-inspired replay
-          for continual learning and reduced catastrophic forgetting.
-        </li>
-      </ul>
+            <div class="card-body p-4">
+              <h5 class="card-title mb-2">Resource-Constrained Computer Vision</h5>
+              <div class="project-meta mb-3">Low-power vision pipelines for edge and embedded platforms</div>
+
+              <div class="mb-3">
+                <span class="tag">Edge AI</span>
+                <span class="tag">Embedded Vision</span>
+                <span class="tag">Efficiency</span>
+              </div>
+
+              <p class="mb-3">
+                [Add 2–4 lines describing the goal, methods, and impact. Example: lightweight models,
+                compression, efficient feature extraction, and deployment constraints (latency/energy/memory).]
+              </p>
+
+              <div class="figure-note">
+                Figure file: <code>assets/project_rc_vision.jpg</code> (optional)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4">
+          <div class="card project-card shadow-sm h-100">
+            <!-- Figure placeholder (replace src with your image) -->
+            <img class="project-thumb"
+                 src="assets/project_in_sensor.jpg"
+                 alt="In-memory In-sensor Computer Vision figure (replace this image)">
+
+            <div class="card-body p-4">
+              <h5 class="card-title mb-2">In-Memory / In-Sensor Computer Vision</h5>
+              <div class="project-meta mb-3">Compute near data for ultra-low-power sensing and inference</div>
+
+              <div class="mb-3">
+                <span class="tag">In-Sensor</span>
+                <span class="tag">In-Memory</span>
+                <span class="tag">Mixed-Signal</span>
+              </div>
+
+              <p class="mb-3">
+                [Add 2–4 lines describing your in-sensor/in-memory pipeline: template matching, motion recognition,
+                dot-product engines, WTA, ADC/DAC trade-offs, etc.]
+              </p>
+
+              <div class="figure-note">
+                Figure file: <code>assets/project_in_sensor.jpg</code> (optional)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4">
+          <div class="card project-card shadow-sm h-100">
+            <!-- Figure placeholder (replace src with your image) -->
+            <img class="project-thumb"
+                 src="assets/project_hw_aware_learning.jpg"
+                 alt="Hardware-Aware Learning / Neuromorphic Computing figure (replace this image)">
+
+            <div class="card-body p-4">
+              <h5 class="card-title mb-2">Hardware-Aware Learning / Neuromorphic Computing</h5>
+              <div class="project-meta mb-3">Algorithms co-designed with circuits and devices for efficiency</div>
+
+              <div class="mb-3">
+                <span class="tag">SNNs</span>
+                <span class="tag">Neuromorphic</span>
+                <span class="tag">Co-Design</span>
+              </div>
+
+              <p class="mb-3">
+                [Add 2–4 lines describing your work: refractory-period optimization, spike reduction, STDP,
+                reservoir/sleep-inspired learning, device non-idealities, and energy-aware training/inference.]
+              </p>
+
+              <div class="figure-note">
+                Figure file: <code>assets/project_hw_aware_learning.jpg</code> (optional)
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Optional note -->
+      <div class="mt-4 text-muted" style="font-size: 0.95rem;">
+        Tip: Put your project images in <code>assets/</code> and use the same filenames shown above,
+        or edit the <code>src="..."</code> paths to match your files.
+      </div>
 
     </div>
   </section>
+
 </main>
 
 <!-- ================= FOOTER ================= -->
