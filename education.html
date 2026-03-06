@@ -10,27 +10,49 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons (optional; safe to keep) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 
   <style>
+    html { overflow-y: scroll; }
+    body { line-height: 1.6; }
+
+    .section-title {
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-link {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .edu-card {
+      border: 0;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
     .edu-card img {
       width: 72px;
       height: 72px;
       object-fit: contain;
       flex: 0 0 auto;
     }
+
     .edu-meta {
       display: flex;
       flex-wrap: wrap;
       gap: .5rem 1rem;
       align-items: baseline;
     }
+
     .edu-meta .badge {
       font-weight: 500;
     }
+
     .edu-bullets {
       margin-bottom: 0;
       padding-left: 1.1rem;
@@ -42,36 +64,45 @@
 
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">SNB Tushar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">SNB Tushar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link active" href="education.html" aria-current="page">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
+<!-- ================= CONTENT ================= -->
 <main class="flex-shrink-0" style="margin-top: 72px;">
-  <section class="py-5">
+  <section class="py-5 bg-light">
     <div class="container">
+
+      <div class="mb-3">
+        <a href="index.html" class="back-link">
+          <i class="bi bi-arrow-left"></i> Back to Home
+        </a>
+      </div>
+
+      <h2 class="section-title">Education</h2>
 
       <!-- UTK -->
       <div class="card edu-card shadow-sm mb-3">
-        <div class="card-body">
+        <div class="card-body p-4">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/utk.png" alt="University of Tennessee, Knoxville logo">
             <div class="w-100">
-
               <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
                 <h5 class="mb-0">University of Tennessee, Knoxville, TN, USA</h5>
                 <span class="text-muted">Spring 2022 – Summer 2026</span>
@@ -86,7 +117,6 @@
                 <li>Advisors: Dr. Garrett S. Rose, Dr. Ahmedullah Aziz, Dr. Catherine Schuman</li>
                 <li>Dissertation Topic: Mixed-Signal Memristive Systems for Resource-Constrained Computer Vision.</li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -94,11 +124,10 @@
 
       <!-- Texas State -->
       <div class="card edu-card shadow-sm mb-3">
-        <div class="card-body">
+        <div class="card-body p-4">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/txst.jpg" alt="Texas State University logo">
             <div class="w-100">
-
               <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
                 <h5 class="mb-0">Texas State University, San Marcos, TX, USA</h5>
                 <span class="text-muted">Fall 2020 – Spring 2022</span>
@@ -118,7 +147,6 @@
                   Exploring the Feasibility of Social Distancing Measurement from Autonomous Vehicle.
                 </li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -126,11 +154,10 @@
 
       <!-- UAF -->
       <div class="card edu-card shadow-sm mb-3">
-        <div class="card-body">
+        <div class="card-body p-4">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/uaf.png" alt="University of Alaska Fairbanks logo">
             <div class="w-100">
-
               <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
                 <h5 class="mb-0">University of Alaska, Fairbanks, AK, USA</h5>
                 <span class="text-muted">Fall 2019 – Spring 2020 (not completed)</span>
@@ -150,7 +177,6 @@
                   FFT-based determination of gravity waves’ horizontal wavelength by manually detecting the region where there is a strong presence of gravity waves in the geospatial image from the AIRS instrument on the Aqua satellite.
                 </li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -158,11 +184,10 @@
 
       <!-- CUET -->
       <div class="card edu-card shadow-sm">
-        <div class="card-body">
+        <div class="card-body p-4">
           <div class="d-flex gap-3 align-items-start">
             <img src="assets/cuet.svg" alt="Chittagong University of Engineering and Technology logo">
             <div class="w-100">
-
               <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
                 <h5 class="mb-0">Chittagong University of Engineering and Technology</h5>
                 <span class="text-muted">March 2013 – November 2017</span>
@@ -183,7 +208,6 @@
                   Modeling and Analysis of Z Folded Solid State Laser Cavity with Two Curved Mirrors
                 </li>
               </ul>
-
             </div>
           </div>
         </div>
@@ -193,6 +217,7 @@
   </section>
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="bg-dark text-white text-center py-3 mt-auto">
   <small>© 2026 Sree Nirmillo Biswash Tushar</small>
 </footer>
